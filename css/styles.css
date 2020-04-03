@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#displayCurrentFloor {
+	font-size: 4em;
+}
+.isInactive {
+	display: none;
+}
+
+.isActive {
+	display: block;
+}
+
+.describeText{
+	font-size: 2em;
+}
+
+.floor{
+	color: #DF224F;
+	font-size: 2.5em;
+}
+
+#fetchDate, #parkDate {
+	color: #DF224F;
+}

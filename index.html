@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Where's my Car?</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+</head>
+
+<body>
+<!--	jumbotron-->
+	<div class="container-fullwidth">
+		<div class="jumbotron pb-0 text-center">
+			<h1><i class="fa fa-car" aria-hidden="true"></i> Where's my Car?</h1>
+			<nav>
+			  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-park-tab" data-toggle="tab" href="#nav-park" role="tab" aria-controls="nav-park" aria-selected="true">Park</a>
+				<a class="nav-item nav-link" id="nav-fetch-tab" data-toggle="tab" href="#nav-fetch" role="tab" aria-controls="nav-fetch" aria-selected="false">Fetch</a>
+			  </div>
+			</nav>
+		</div>
+	</div>
+	<div class="container text-center">
+		<div class="tab-content" id="nav-tabContent">
+		  	<div class="tab-pane fade show active" id="nav-park" role="tabpanel" aria-labelledby="nav-park-tab">
+				<div class="row text-center">
+					<div class="col-12">
+						<span class="describeText">Car parked at: </span>
+						<span class="floor" id="resultPark">-</span>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor1a">1A</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor1b">1B</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor2a">2A</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor2b">2B</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor3a">3A</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor3b">3B</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor4a">4A</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor4b">4B</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor5a">5A</button>
+					</div>
+					<div class="col-6 my-2">
+						<button type="button" class="btn btn-success px-5" id="floor5b">5B</button>
+					</div>
+					<div class="col-12 my-2">
+						<span class="font-italic">Last updated:</span>
+						<span id="parkDate">-</span>
+					</div>
+				</div>
+			</div>
+		  	<div class="tab-pane fade" id="nav-fetch" role="tabpanel" aria-labelledby="nav-fetch-tab">
+				<p>
+					<span class="describeText">Your car is at </span>
+					<span class="floor" id="resultFetch">-</span>
+				</p>
+				<p class="font-italic">
+					<span>Last updated:</span>
+					<span id="fetchDate">-</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
