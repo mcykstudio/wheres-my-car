@@ -24,15 +24,15 @@
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
 	body {
-		font-size: 200%;
+		font-size: 300%;
 	}
 	
 	.btn {
-		font-size: 150%;
+		font-size: 250%;
 	}
 	
 	#resultPark, #resultFetch {
-		font-size: 250%;
+		font-size: 350%;
 	}
 }
 
