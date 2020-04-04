@@ -17,7 +17,7 @@
 	font-size: 2.5em;
 }
 
-#resultPark, #fetchDate {
+#resultPark, #fetchDate, #parkDate {
 	color: #DF224F;
 }
 
@@ -25,6 +25,9 @@
 @media (min-width: 576px) { 
 	body, .btn, h1 {
 		font-size: 2.3em;
+	}
+	span, .nav-tabs {
+		font-size: 3em;
 	}
 }
 
