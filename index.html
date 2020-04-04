@@ -12,9 +12,9 @@
 
 <body>
 <!--	jumbotron-->
-	<div class="container-fullwidth">
+	<div class="container-fluid">
 		<div class="jumbotron pb-0 text-center">
-			<h1><i class="fa fa-car" aria-hidden="true"></i> Where's my Car?</h1>
+			<h1 class="pb-4"><i class="fa fa-car" aria-hidden="true"></i> Where's my Car?</h1>
 			<nav>
 			  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
 				<a class="nav-item nav-link active" id="nav-park-tab" data-toggle="tab" href="#nav-park" role="tab" aria-controls="nav-park" aria-selected="true">Park</a>
@@ -27,41 +27,41 @@
 		<div class="tab-content" id="nav-tabContent">
 		  	<div class="tab-pane fade show active" id="nav-park" role="tabpanel" aria-labelledby="nav-park-tab">
 				<div class="row text-center">
-					<div class="col-12">
-						<span class="describeText">Car parked at: </span>
-						<span class="floor" id="resultPark">-</span>
+					<div class="col-sm-12">
+						<span>Car parked at: </span>
+						<span id="resultPark">-</span>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor1a">1A</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor1b">1B</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor2a">2A</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor2b">2B</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor3a">3A</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor3b">3B</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor4a">4A</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor4b">4B</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor5a">5A</button>
 					</div>
-					<div class="col-6 my-2">
+					<div class="col-sm-6 my-2">
 						<button type="button" class="btn btn-success px-5" id="floor5b">5B</button>
 					</div>
-					<div class="col-12 my-2">
+					<div class="col-sm-12 my-2">
 						<span class="font-italic">Last updated:</span>
 						<span id="parkDate">-</span>
 					</div>
@@ -69,8 +69,8 @@
 			</div>
 		  	<div class="tab-pane fade" id="nav-fetch" role="tabpanel" aria-labelledby="nav-fetch-tab">
 				<p>
-					<span class="describeText">Your car is at </span>
-					<span class="floor" id="resultFetch">-</span>
+					<span>Your car is at </span>
+					<span id="resultFetch">-</span>
 				</p>
 				<p class="font-italic">
 					<span>Last updated:</span>
