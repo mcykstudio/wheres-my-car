@@ -64,6 +64,8 @@ parkBut.addEventListener('click', function(){
 
 fetchBut.addEventListener('click', function(){
 //	console.log("in fetched");
+	var time = "";
+	var date = "";
 	var result = database.ref("currentFloor").on('value', function (snapshot){
 //	console.log("Your car is currently parked at " + snapshot.val());
 //	console.log(displayFloor.textContent);
@@ -71,13 +73,17 @@ fetchBut.addEventListener('click', function(){
 	});
 	
 	var dateDB = database.ref("lastUpdated/time").on('value', function (snapshot){
-		fetchDate.textContent = snapshot.val();
+		time = snapshot.val();
+		console.log(time);
+		fetchDate.textContent = time;
 	});
 //	console.log(fetchDate.textContent);
-//	var timeDB = database.ref("lastUpdated/date").on('value', function (snapshot){
-////	console.log(fetchDate.textContent);
-//		fetchDate.textContent = snapshot.val();
-//	});
+	var timeDB = database.ref("lastUpdated/date").on('value', function (snapshot){
+//	console.log(fetchDate.textContent);
+		date = snapshot.val();
+		console.log(date);
+		fetchDate.textContent += " | " + date;
+	});
 });
 
 
